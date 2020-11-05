@@ -1,0 +1,416 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+hr {
+  background-color: #B4B4B4;
+  border: none;
+  height: 1px;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  margin: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0 5%;
+  background-color: #EE502F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo-container a {
+  color: white;
+  font-size: max(1.5rem, 2vw);
+  font-weight: bold;
+}
+
+.logo-container i {
+  color: white;
+  font-size: max(1.5rem, 2vw);
+}
+
+/* clamp(min, ideal, max) */
+.links-container {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: clamp(200px, 35%, 500px);
+}
+
+.links-container a {
+  color: white;
+}
+
+.links-container a:hover {
+  font-weight: bold;
+}
+
+.portfolio img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-container {
+  height: 800px;
+  width: 100%;
+  background: url("/photos/background.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 50% 5%;
+  border-bottom-left-radius: 50% 5%;
+}
+
+.hero {
+  width: clamp(300px, 50%, 700px);
+  margin: max(10vw, 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 10px;
+}
+
+.hero p {
+  text-align: center;
+  width: max(35vw, 300px);
+}
+
+.hero a {
+  background-color: yellow;
+  color: black;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  box-shadow: 0px 3px 4px black;
+}
+
+.hero a:hover {
+  background-color: khaki;
+  font-weight: bold;
+}
+
+.service-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.services-container a {
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  color: white;
+  background-color: #EE502F;
+  margin-bottom: 70px;
+}
+
+.services-container a:hover {
+  background-color: #F3A9B1;
+}
+
+.service {
+  width: 25rem;
+  min-width: 15vw;
+  text-align: center;
+}
+
+.service i {
+  font-size: max(2rem, 3vw);
+}
+
+.design i {
+  color: #EE502F;
+}
+.design h3 {
+  color: #EE502F;
+}
+
+.ecommerce i {
+  color: #F28630;
+}
+.ecommerce h3 {
+  color: #F28630;
+}
+
+.analytics i {
+  color: #F9C332;
+}
+.analytics h3 {
+  color: #F9C332;
+}
+
+.mobile i {
+  color: #DBC92B;
+}
+.mobile h3 {
+  color: #DBC92B;
+}
+
+.audits i {
+  color: #C2D5D9;
+}
+.audits h3 {
+  color: #C2D5D9;
+}
+
+.content i {
+  color: #F3A9B1;
+}
+.content h3 {
+  color: #F3A9B1;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.port-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.port-text {
+  width: 28rem;
+  margin-left: 100px;
+}
+
+.port-item img {
+  width: min(30rem, 60vw);
+  height: auto;
+}
+
+.portfolio-container h2 {
+  color: #B4B4B4;
+  font-size: 1.25rem;
+  margin: 70px;
+}
+
+.port-text a {
+  background-color: #EE502F;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+}
+
+.port-text a:hover {
+  background-color: #F3A9B1;
+}
+
+.port-text p {
+  margin-bottom: 60px;
+}
+
+.year {
+  margin-left: 10px;
+  background-color: #EE502F;
+  color: white;
+  font-size: .75rem;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.pricing-container {
+  background-color: #EE502F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.pricing-container h2 {
+  color: white;
+  margin: 90px;
+  font-size: 1.25rem;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan {
+  background-color: white;
+  margin: 0 30px 30px 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 330px;
+  box-shadow: 0 0 25px #AC381F;
+}
+
+.plan p {
+  text-align: center;
+}
+
+#basic {
+  height: 280px;
+  background: linear-gradient(#FFF1F4, white);
+}
+
+#basic a {
+  color: #F3A9B1;
+  border: solid 2px #F3A9B1;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+}
+
+#basic a:hover {
+  background-color: #F3A9B1;
+  color: white;
+}
+
+#standard {
+  height: 470px;
+  background: linear-gradient(#FFF9E8, white);
+}
+
+#standard a {
+  color: #F9C332;
+  border: solid 2px #F9C332;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+}
+
+#standard a:hover {
+  background-color: #F9C332;
+  color: white;
+}
+
+#premium {
+  background: linear-gradient(#EEF6F9, white);
+}
+
+#premium a {
+  color: #BFD3D9;
+  border: solid 2px #BFD3D9;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+}
+
+#premium a:hover {
+  background-color: #BFD3D9;
+  color: white;
+}
+
+#prices {
+  color: #EDA291;
+  font-size: .75rem;
+  margin-bottom: 75px;
+}
+
+.in-touch {
+  display: flex, block;
+}
+
+.in-touch h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-form-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
+}
+
+.forms-container {
+  width: 40vw;
+  margin: 0 auto;  /*this centers an object, no margin top/bottom, separate horiz space evenly*/
+}
+
+#email {
+  width: 19.5vw;
+  height: 30px;
+}
+
+#plan {
+  width: 19.5vw;
+  height: 30px;
+}
+
+.socials {
+  text-align: center;
+  margin: 10px;
+}
+
+.in-touch i {
+  color: black;
+  font-size: 3rem;
+  margin: 30px 10px 10px 10px;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .75rem;
+  margin-bottom: 10px;
+  color: #B4B4B4;
+}
+
+input, select, textarea {
+  border: solid 1px #B4B4B4;
+}

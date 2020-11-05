@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <script src="script.js"></script>
+
+    <main class="main-container">
+      
+      <header class="header-container">
+        <div class="logo-container" id="home">
+          <i class="fas fa-cookie-bite"></i>
+          <a href="#home">charlee</a>
+        </div>
+        <!-- ul>(li>a)*3 -->
+        <ul class="links-container">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio"> Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </header>
+
+      <section class="hero-container">
+        <div class="hero service">
+          <h1>Charlee Lachance Web Development</h1>
+          <p>Specializing in custom theme development. If you're a business seeking a web presence or are looking to hire, contact me here.</p>
+          <a href="#pricing">Get started</a>
+        </div>
+      </section>
+
+      <section class="services-container" id="services">
+        <div class="service-boxes">
+          <div class="design service">
+            <i class="far fa-object-group"></i>
+            <h3>Design + Development</h3>
+            <p>Clean, modern designs - optimized for performance, search engines, and converting users to customers.</p>
+          </div>
+
+          <div class="ecommerce service">
+            <i class="fas fa-cash-register"></i>
+            <h3>eCommerce</h3>
+            <p>Integration of eCommerce platforms, payment gateways, custom product templates, and more.</p>
+          </div>
+
+          <div class="analytics service">
+            <i class="fas fa-chart-line"></i>
+            <h3>Analytics</h3>
+            <p>Get insights into who is browsing your site so that you can make smarter business decisions.</p>
+          </div>
+
+          <div class="mobile service">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Mobile-Friendly</h3>
+            <p>A responsive design makes your website accessible to all users, regardless of their device.</p>
+          </div>
+
+          <div class="audits service">
+            <i class="fas fa-check-circle"></i>
+            <h3>Website Audits</h3>
+            <p>Looking to improve your page performance, SEO, or user experience? Request a free site audit.</p>
+          </div>
+
+          <div class="content service">
+            <i class="fas fa-pencil-ruler"></i>
+            <h3>Content Management</h3>
+            <p>Custom WordPress theme and plugin development. Easily update content without knowing how to code.</p>
+          </div>
+        </div>
+
+        <a href="#pricing">Learn more</a>
+      </section>
+
+      <hr>
+
+      <section class="portfolio-container" id="portfolio">
+        <h2>PORTFOLIO</h2>
+  
+        <div class="port-item">
+          <img src="/photos/acnl.png" alt="Screenshot of my Animal Crossing Personality Quiz" id="acnl">
+          <div class="port-text">
+            <h3>Animal Crossing Personality Quiz<span class="year">2020</span></h3>
+            <p>A short personality quiz I made during Girls Who Code. There are 4 possible results.</p>
+            <a href="https://animal-crossing-quiz-charlee.glitch.me/" target="_blank">Visit site</a>
+          </div>
+        </div>
+
+        <div class="port-item">
+          <img src="/photos/my-website.png" alt="Screenshot of my personal portfolio website" id="my-website">
+          <div class="port-text">
+            <h3>Portfolio Website<span class="year">2020</span></h3>
+            <p>The first (very simple) website I ever made.</p>
+            <a href="https://personal-website-charlee.glitch.me/" target="_blank">Visit site</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-container" id="pricing">
+        
+        <h2>PRICING PER BUILD</h2>
+        
+        <div class="plans">
+          <div class="plan" id="basic">
+            <h3>BASIC</h3>
+            <div>
+              <p>Web Audit</p>
+              <p>Design</p>
+              <p>Development</p>
+            </div>
+          <a href="#get-touch">Request quote</a>
+          </div>
+
+          <div class="plan" id="standard">
+            <h3>STANDARD</h3>
+            <div>
+              <p>Web Audit</p>
+              <p>Design</p>
+              <p>Development</p>
+              <p>Backups</p>
+              <p>Analytics</p>
+              <p>Live Chat</p>
+              <p>Search Engine Optimization</p>
+              <p>Content Managemnet</p>
+            </div>
+            <a href="#get-touch">Request quote</a>
+          </div>
+
+          <div class="plan" id="premium">
+            <h3>PREMIUM</h3>
+            <div>
+              <p>Web Audit</p>
+              <p>Design</p>
+              <p>Development</p>
+              <p>Backups</p>
+              <p>Analytics</p>
+              <p>Live Chat</p>
+              <p>Search Engine Optimization</p>
+              <p>Content Managemnet</p>
+              <p>Maintenance Agreement</p>
+              <p>eCommerce</p>
+              <p>Email Setup</p>
+              <p>Hosting</p>
+            </div>
+            <a href="#in-touch">Request quote</a>
+          </div>
+        </div>
+        
+        <p id="prices">PRICES LISTED IN USD.</p>
+      </section>
+
+      <section class="in-touch">
+        <h2>Get in touch</h2>
+        <form class="forms-container">
+          <div class="top-form-container">
+            <div class="form-container">
+              <label for="email">EMAIL</label>
+              <input type="text" id="email">
+            </div>
+
+            <div class="form-container">
+              <label for="plan">PLAN</label>
+              <select name="plan" id="plan">
+                <option>Basic</option>
+                <option selected>Standard</option>
+                <option>Premium</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-container" id="message-container">
+            <label for="message">MESSAGE</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+        </form>
+
+        <div class="socials">
+          <a href="https://www.instagram.com/charleelapointe/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/charlee.lachance.96/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="mailto: m_c_lachance@yahoo.com"><i class="fas fa-inbox"></i></a>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>
