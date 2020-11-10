@@ -85,7 +85,7 @@ header {
 .hero-container {
   height: 800px;
   width: 100%;
-  background: url("/photos/background.png");
+  background: url("./photos/background.png");
   background-position: center;
   background-size: cover;
   display: flex;
